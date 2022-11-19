@@ -1,0 +1,42 @@
+{
+  "name": "flash_images",
+  "version": "1.0.0",
+  "description": "saas product for image delivery by agam",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://RyukAD@bitbucket.org/RyukAD/flash_images.git"
+  },
+  "author": "Agam",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/RyukAD/flash_images#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "aws-sdk": "^2.900.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "fast-folder-size": "^1.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "gifsicle": "^5.2.0",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.12.7",
+    "node-fetch": "^2.6.1",
+    "pngquant-bin": "^6.0.0",
+    "sharp": "^0.28.1",
+    "rimraf": "^3.0.2",
+    "compress-images": "^1.9.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "compress-images": "^1.9.9",
+    "rimraf": "^3.0.2"
+  }
+}
